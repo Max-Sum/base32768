@@ -13,7 +13,7 @@ Check https://github.com/qntm/base32768 for information about base32768.
 	// Encode to string
 	e := encoding.EncodeToString(d)
 	fmt.Println(e)
-  // Decode string
+	// Decode string
 	d, _ = encoding.DecodeString(e)
 	fmt.Println(string(d))
   
@@ -22,7 +22,7 @@ Check https://github.com/qntm/base32768 for information about base32768.
 	eb := make([]byte, elen)
 	encoding.Encode(eb, d)
 	fmt.Println(eb)
-  // Decode
+	// Decode
 	dlen := encoding.DecodedLen(len(eb))
 	db := make([]byte, dlen)
 	n, _ := encoding.Decode(db, eb)
